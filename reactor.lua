@@ -51,9 +51,10 @@ else
     if id_selector > #slaves or 0 > id_selector
     then
       print("ID unknown: " + tostring(id_selector));
+    
+    else 
+      signal = signal + slaves[id_selector];
     end
-  
-    signal = signal + slaves[id_selector];
   end
 end
 
